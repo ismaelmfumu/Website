@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="projects">
+            
+            <h2>Projects</h2>
+
+            <div class="container">
+            <div class="projects">
+                <h3>Smart Adaptive Inventory System (2024)</h3>
+                <p> The project itself, an automated inventory system for the restaurant industry, highlights the team's technical expertise in integrating weight sensors and RFID technology for real-time inventory monitoring. This comprehensive system not only addresses common challenges in inventory management but also emphasizes the team's ability to apply theoretical knowledge to practical solutions in a complex engineering project.</p>
+                <p>This project demonstrates a high level of skill in various areas, including project management, engineering professionalism, and technical proficiency. The team effectively applied health and safety guidelines to tasks such as soldering, drilling, and hardware storage, showcasing a meticulous approach to safety. In terms of engineering professionalism, the team adhered to a code of ethics, fostering trust and open communication within the team. Project management techniques, such as the Gantt Chart and risk management, were skillfully utilized to ensure the project progressed smoothly and efficiently.</p>
+
+
+            </div>
+            </div>
+
+            <div class="container">
+            <div class="project">
+                <h3>Automated Snowplow (2023)</h3>
+                <p>The primary goal of our project is to design and configure a robot with the capability to effectively clear snow or debris within a designated area defined by black tape boundaries. The robot must be equipped to handle both moving and stationary objects obstructing its path, relocating them to a specified zone while adhering to the set boundaries. Additionally, the robot should demonstrate the ability to navigate around the restricted tape without breaching it and continue its operations within the designated area.</p>
+                <p>Crucially, the project aims to ensure that the robot avoids incurring penalties outlined in the project requirements. These penalties encompass constraints such as constructing the robot within specified size limits, avoiding collisions with obstacles, and preventing the robot from crossing the black tape. In summary, the primary objective is to develop a robot that can proficiently clear debris within a confined space while strictly adhering to the stipulated rules and avoiding penalties.</p>
+                
+
+            </div>
+            </div>
+
+            <div class="container">
+            <div class="project">
+                <h3>Smart Garden Irrigation System (2023)</h3>
+                <p>The smart irrigation system integrates hardware and software components to create an efficient and environmentally conscious solution for managing water resources in agriculture and landscaping. The system's hardware includes sensors that measure soil moisture levels and an Arduino Due microcontroller, which controls the irrigation system based on the sensor data. This setup ensures that plants receive the optimal amount of water, avoiding both over-watering and under-watering.</p>
+                <p>On the software side, the system features a web application that allows users to remotely monitor and control the irrigation system. Through the web app, users can access real-time data from the sensors, such as soil moisture levels, and adjust watering schedules or settings as needed. This remote access is particularly beneficial for farmers and gardeners who may not always be on-site to manage the irrigation system manually.</p>
+                <p>Additionally, the system utilizes a database to store and retrieve sensor data and user settings. This data can be used for analysis and optimization of watering schedules, as well as for historical tracking of moisture levels and watering patterns. By leveraging this information, users can make informed decisions about their watering practices, leading to water conservation and improved plant health.</p>
+
+                
+            </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

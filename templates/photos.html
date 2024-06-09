@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="photos">
+            <h2>Photos: Automated Snowplow</h2>
+           
+            <div class="photo-gallery">
+                <img src="static/images/snowPlow/Screenshot 2024-05-31 at 2.02.11 PM.png" alt="Photo 1">
+                <img src="static/images/snowPlow/Screenshot 2024-05-31 at 2.02.34 PM.png" alt="Photo 2">
+                <img src="static/images/snowPlow/Screenshot 2024-05-31 at 2.02.51 PM.png" alt="Photo 3">
+                <!-- Add more images as needed -->
+            
+            </div>
+        </section>
+        
+        <section id="photos">
+            <h2>Photos: Smart Garden Irrigation System</h2>
+            
+            <div class="photo-gallery">
+                <img src="static/images/smartGarden/Screenshot 2024-06-02 at 11.16.56 AM.png" alt="Photo 1">
+                <img src="static/images/smartGarden/Screenshot 2024-05-31 at 2.07.32 PM.png" alt="Photo 2">
+                <img src="static/images/smartGarden/Screenshot 2024-06-02 at 11.13.42 AM.png" alt="Photo 3">
+           
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

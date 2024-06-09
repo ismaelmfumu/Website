@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+       <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="background">
+            <h2>Background</h2>
+            <p>As a Computer Systems Engineering student at Carleton University, I am deeply immersed in the study of hardware and software technologies, focusing on their design principles and applications. </p>
+
+            <p> Throughout my academic journey, I've delved into various aspects of software engineering, specializing in multiple programming languages such as Java, Python, C++, Go, C, and assembly language. Additionally, I've gained expertise in User Interface programming languages like Javascript, CSS, and HTML, refining my skills in network and website infrastructure development. Complementing this, I've actively engaged in hands-on projects involving hardware components, where I've gained experience in wiring, soldering, and coding for specific functionalities. I'm proficient in working with microcomputers and microcontrollers such as the Raspberry Pi, Arduino Uno, and Arduino Due, and I've also explored areas like PCB and ASIC development.</p>
+                
+            <p>In addition to my academic pursuits, I've gained valuable sales experience as a sales associate at Tommy Hilfiger. This role has enhanced my ability to effectively assist and guide customers, emphasizing the importance of customer satisfaction and enhancing the overall in-store experience. My contributions have been recognized with multiple Employee of the Month awards, contributing to our location's success in ranking among the top 10 in Canada.</p>
+                
+            <p>My background in Computer Systems Engineering has equipped me with a solid foundation in both hardware and software technologies, while my experience in sales has refined my communication and customer service skills. I've also developed strong problem-solving, teamwork, and time management abilities through coursework and projects.</p>
+                
+            <p>Thank you for taking the time to review my profile. For further details and to explore more of my experiences, please visit my LinkedIn profile at www.linkedin.com/in/ismael-mfumu-b0b27b1b5. I'm happy to provide any additional information upon request.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

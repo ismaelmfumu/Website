@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="image-text">
+            <div class="container">
+                <div class="image">
+                    <img src="static/images/Misc/Screenshot 2024-06-02 at 10.32.10 AM.png" alt="Description of image">
+                </div>
+                <div class="text">
+                    <h2>About Me</h2>
+                    <p>My career is marked by a commitment to excellence and a drive to push the boundaries of what technology can achieve. Whether tackling complex technical challenges, leading dynamic teams, or exploring new frontiers in software development, I bring a blend of technical expertise, strategic thinking, and a passion for innovation to every project. Through my work, I strive to make a meaningful impact and contribute to the advancement of the tech industry.</p>
+                
+                    <h4>Languages</h4>
+                    <p>Python, Java, C++, Swift, Ruby, HTML/CSS, Javascript, React, SQL , Python Flask</p>
+
+                    <h4>Develpoer Tools</h4>
+                    <p>Arduino IDE, ModelSim, Verilog & VHDL, Git, Vivado, Visual Studios, etc</p>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

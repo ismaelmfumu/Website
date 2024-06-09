@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="container">
+            <div class="job">
+                <h3>Sales Associate at Tommmy Hilfiger</h3>
+                <p>July 2019 - Present</p>
+                <p>My role as a sales associate at Tommy Hilfiger was pivotal in refining my customer service and retail management skills. I honed my communication abilities and interpersonal finesse, navigating a dynamic, fast-paced environment with ease. Achieving and exceeding sales objectives underscored my commitment to excellence, while collaborating with colleagues highlighted the importance of teamwork in achieving organizational goals.</p>
+                <p>Receiving the Employee of the Month award further validated my dedication and performance in exceeding expectations. This experience sharpened my attention to detail and fortified my adaptability, essential skills in addressing customer needs and managing diverse responsibilities concurrently. These proficiencies are transferable and invaluable, positioning me as a versatile candidate ready to excel in my next role. </p>
+                
+               
+                <div class="photo-gallery">
+                <img src="static/images/tommyHilfiger/Screenshot 2024-06-02 at 2.21.37 PM.png" width="400px" height="50%">
+                <img src="static/images/tommyHilfiger/Screenshot 2024-06-02 at 2.26.18 PM.png" width="400px" height="50%">
+                <img src="static/images/tommyHilfiger/Screenshot 2024-06-02 at 2.24.48 PM.png" width="400px" height="50%">
+
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

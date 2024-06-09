@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies/Interests</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ismael Mfumu</h1>
+        <p>Computer Systems Engineer | <a href="https://www.linkedin.com/in/ismael-mfumu-b0b27b1b5/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('hobbies') }}">Hobbies/Interests</a></li>
+                <li><a href="{{ url_for('photos') }}">Photos</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hobbies">
+            <h2>Hobbies/Interests</h2>
+            
+            <h4>Music</h4>
+            <p>Music has been an integral part of my life from an early age, with its presence permeating my household since childhood. This early exposure instilled in me a deep appreciation for music, sparking a desire to not only play instruments but also to delve into its theoretical and historical aspects. Over the years, I have cultivated my musical abilities through mastering instruments such as the clarinet, violin, steel pan, and flute. Additionally, my passion for music extends beyond personal practice, as I actively seek out live concerts and orchestras to immerse myself in the vibrant and enriching world of music. The opportunity to be surrounded by music in various forms has consistently fueled my passion and remains a cornerstone of my identity.</p>
+
+            <h4>Sports</h4>
+            <p>While sports have always been present in my life, my relationship with them has evolved significantly, especially in comparison to my enduring love for music. In my younger years, I held a distaste for sports and actively avoided them, failing to grasp their significance or the passion they ignited in others. However, my perspective shifted during high school, where I was exposed to the multifaceted beauty of sports.</p>
+            <p>My journey into sports began with basketball, as I found myself engrossed in watching NBA games and following basketball players online. This initial fascination gradually extended to other sports, such as soccer and football. Through my newfound appreciation for sports, I discovered that they encapsulate a wealth of positive values, including teamwork, coordination, communication, determination, and preparation.
+            Moreover, I recognized that many of the mantras and principles upheld in sports are applicable beyond the field or court. I endeavor to integrate these values into my daily life, leveraging them to maintain a competitive edge and derive enjoyment from the process of any endeavor I pursue.</p>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ismael Mfumu</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
